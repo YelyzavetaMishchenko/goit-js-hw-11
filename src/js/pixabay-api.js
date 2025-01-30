@@ -17,7 +17,7 @@ export async function fetchImages(query) {
 
     return response.data.hits;
   } catch (error) {
-    console.error('Ошибка при загрузке изображений:', error);
+    console.error('The field is empty', error);
     return [];
   }
 }
