@@ -13,8 +13,8 @@ form.addEventListener('submit', async e => {
   const query = e.target.elements.searchQuery.value.trim();
   if (!query) {
     iziToast.error({
-      title: 'Ошибка',
-      message: 'Введите слово для поиска!',
+      title: 'Error',
+      message: 'The field is empty!',
     });
     return;
   }
