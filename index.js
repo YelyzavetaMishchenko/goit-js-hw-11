@@ -5,5 +5,5 @@ import{a as m,S as p,i as a}from"./assets/vendor-tnUJPedx.js";(function(){const 
           <p>❤️ ${i} | 👀 ${u} | 💬 ${f} | ⬇️ ${d}</p>
         </div>
       </a>
-    `).join(""),new p(".gallery a").refresh()}const L=document.querySelector("#search-form"),c=document.querySelector(".gallery"),l=document.querySelector(".loader");L.addEventListener("submit",async o=>{o.preventDefault();const t=o.target.elements.searchQuery.value.trim();if(!t){a.error({title:"Error",message:"The field is empty!"});return}c.innerHTML="",l.style.display="block";const s=await h(t);if(l.style.display="none",s.length===0){a.warning({title:"Упс...",message:"Изображения не найдены, попробуйте другой запрос."});return}b(s,c)});
+    `).join(""),new p(".gallery a").refresh()}const L=document.querySelector("#search-form"),c=document.querySelector(".gallery"),l=document.querySelector(".loader");L.addEventListener("submit",async o=>{o.preventDefault();const t=o.target.elements.searchQuery.value.trim();if(!t){a.error({title:"Error",message:"The field is empty!"});return}c.innerHTML="",l.style.display="block";const s=await h(t);if(l.style.display="none",s.length===0){a.warning({title:"Error",message:"Please try again!"});return}b(s,c)});
 //# sourceMappingURL=index.js.map
