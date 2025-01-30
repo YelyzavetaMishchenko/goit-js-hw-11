@@ -1,5 +1,5 @@
-import { fetchImages } from './pixabay-api.js';
-import { renderImages } from './render-functions.js';
+import { fetchImages } from './js/pixabay-api.js';
+import { renderImages } from './js/render-functions.js';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
@@ -27,8 +27,8 @@ form.addEventListener('submit', async e => {
 
   if (images.length === 0) {
     iziToast.warning({
-      title: 'Упс...',
-      message: 'Изображения не найдены, попробуйте другой запрос.',
+      title: 'Error',
+      message: 'Please try again!',
     });
     return;
   }
